@@ -1,0 +1,70 @@
+/* Main Footer Style */
+.footer1_mainDiv {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    background: #1a242f; /* Dark background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.8); /* Light text color */
+    padding: 15px 0; /* Added padding to avoid content sticking to edges */
+}
+
+/* Image inside Footer */
+.footer1_img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain; /* Ensures image maintains aspect ratio */
+}
+
+/* Bottom part of the footer */
+.footer1_bottomDiv {
+    position: relative;
+    left: 10px; /* Slight left margin */
+    display: flex;
+    justify-content: center; /* Centered content */
+    align-items: center;
+    margin-right: 50%; /* Pushes content towards left */
+}
+
+/* Font Styling for Footer Links */
+.footer1_bottomDiv_font {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #0f79af; /* Light blue color */
+    margin-right: 16px; /* Space between footer items */
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.footer1_bottomDiv_font:hover {
+    color: #00a8e1; /* Change to a brighter blue on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For medium screens */
+@media screen and (max-width: 685px) {
+    .footer1_bottomDiv {
+        margin-right: auto; /* Align left when the screen size is smaller */
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 410px) {
+    .footer1_bottomDiv {
+        margin-right: auto; /* Further adjust alignment for very small screens */
+    }
+    
+    .footer1_img {
+        height: 120px; /* Smaller image for small screens */
+        width: 120px;
+    }
+    
+    .footer1_bottomDiv_font {
+        font-size: 14px; /* Smaller font size for small screens */
+    }
+}
